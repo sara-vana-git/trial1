@@ -15,7 +15,7 @@ steps:
     echo "Scheduling a delayed build..."
     az devops configure --defaults organization=https://dev.azure.com/saratraining97 project="trial project" 
     sleep 60  # Delay for 1 minutes (60 seconds)
-    az pipelines run --name "DelayedBuildPipeline" --branch $(Build.SourceBranchName)
+    az pipelines run --name "sara-vana-git.trial1 (16)" --branch $(Build.SourceBranchName)
   env:
     AZURE_DEVOPS_EXT_PAT: 3p5l2UJFV2kiULUbBk4qJXxhfyj7sIYnjDD0OpYDzdMudBPZZSnbJQQJ99ALACAAAAAAAAAAAAASAZDOULgg
   displayName: 'Schedule Delayed Build'
